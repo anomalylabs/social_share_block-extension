@@ -1,0 +1,46 @@
+{{ asset_add('styles.css', 'anomaly.extension.social_share_block::scss/icons/ionicons.scss') }}
+{{ asset_add('styles.css', 'anomaly.extension.social_share_block::scss/block.scss') }}
+
+<div class="social-share">
+
+    <a class="social-share__btn social-share__btn--twitter"
+       href="https://twitter.com/intent/tweet?text={{ template.meta_title }} - {{ url_full() }}"
+       rel="nofollow"
+       target="_blank">
+        <i class="ion-social-twitter"></i>
+        <span class="social-share__text">Tweet</span>
+    </a>
+
+    <a class="social-share__btn social-share__btn--facebook"
+       href="https://www.facebook.com/sharer/sharer.php?u={{ url_full() }}"
+       rel="nofollow"
+       target="_blank">
+        <i class="ion-social-facebook"></i>
+        <span class="social-share__text">Share</span>
+    </a>
+
+    <a class="social-share__btn social-share__btn--linkedin"
+       href="https://www.linkedin.com/cws/share?url={{ url_full() }}"
+       rel="nofollow"
+       target="_blank">
+        <i class="ion-social-linkedin"></i>
+        <span class="social-share__text">Share</span>
+    </a>
+
+    <a class="social-share__btn social-share__btn--reddit"
+       href="http://www.reddit.com/submit?url={{ url_full() }}&amp;title={{ template.meta_title }}"
+       rel="nofollow"
+       target="_blank">
+        <i class="ion-social-reddit"></i>
+        <span class="social-share__text">Share</span>
+    </a>
+
+    <a class="social-share__btn social-share__btn--mail"
+       href="mailto:?subject={{ template.meta_title }}&amp;amp;body={{ url_full() }}"
+       rel="nofollow"
+       target="_blank">
+        <i class="ion-paper-airplane"></i>
+        <span class="social-share__text">Share</span>
+    </a>
+
+</div>
