@@ -7,6 +7,9 @@ return [
     'facebook'  => [
         'url' => 'https://www.facebook.com/sharer/sharer.php?u={{ url_full() }}',
     ],
+    'googleplus'  => [
+        'url' => 'https://plus.google.com/share?url={{ url_full() }}',
+    ],
     'linkedin'  => [
         'url' => 'https://www.linkedin.com/cws/share?url={{ url_full() }}',
     ],
