@@ -5,10 +5,10 @@
     .social-share__btn {
         color: #fff;
         float: left;
-        margin: 0 5px;
         font-size: 14px;
         padding: 8px 16px;
         line-height: 18px;
+        margin: 0 10px 0 0;
         border-radius: 3px;
         vertical-align: middle;
 
@@ -24,9 +24,6 @@
     }
 }
 
-/**
- * Social Btn Colors
- */
 .social-share__btn {
     text-decoration: none;
     background-color: #95a5a6;
@@ -37,42 +34,24 @@
     }
 }
 
-.social-share__btn--twitter {
-    background-color: #00aced;
+/**
+ * Network Colors
+ */
+$networks: (
+        "twitter": #00aced,
+        "facebook": #3b5998,
+        "linkedin": #007bb6,
+        "reddit": #ed001c,
+        "pinterest": #bd081c,
+        "mail": #f1c40f,
+) !default;
 
-    &:hover {
-        background-color: darken(#00aced, 10%);
-    }
-}
+@each $network, $value in $networks {
+    .social-share__btn--#{$network} {
+        background-color: $value;
 
-.social-share__btn--facebook {
-    background-color: #3b5998;
-
-    &:hover {
-        background-color: darken(#3b5998, 10%);
-    }
-}
-
-.social-share__btn--linkedin {
-    background-color: #007bb6;
-
-    &:hover {
-        background-color: darken(#007bb6, 10%);
-    }
-}
-
-.social-share__btn--reddit {
-    background-color: #ed001c;
-
-    &:hover {
-        background-color: darken(#ed001c, 10%);
-    }
-}
-
-.social-share__btn--mail {
-    background-color: #f1c40f;
-
-    &:hover {
-        background-color: darken(#f1c40f, 5%);
+        &:hover {
+            background-color: darken($value, 10%);
+        }
     }
 }
