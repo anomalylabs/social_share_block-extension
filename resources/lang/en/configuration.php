@@ -10,6 +10,8 @@ return [
             'linkedin'   => 'LinkedIn',
             'pinterest'  => 'Pinterest',
             'reddit'     => 'Reddit',
+            'tumblr'     => 'Tumblr',
+            'buffer'     => 'Buffer',
             'mail'       => 'Mail',
             'print'      => 'Print',
         ],

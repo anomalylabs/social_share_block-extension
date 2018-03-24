@@ -19,6 +19,12 @@ return [
     'reddit'    => [
         'url' => 'http://www.reddit.com/submit?url={{ url_full() }}&amp;title={{ template.meta_title }}',
     ],
+    'tumblr'    => [
+        'url' => 'https://www.tumblr.com/widgets/share/tool/preview?shareSource=legacy&canonicalUrl=&url={{ url_full() }}&posttype=link&title={{ template.meta_title }}&caption={{ template.meta_title }}&content={{ url_full() }}',
+    ],
+    'buffer'    => [
+        'url' => 'https://buffer.com/add?source=button&url={{ url_full() }}&text={{ template.meta_title }}&posttype=link',
+    ],
     'mail'      => [
         'icon' => 'ion-paper-airplane',
         'url' => 'mailto:?subject={{ template.meta_title }}&amp;amp;body={{ url_full() }}',

@@ -11,6 +11,8 @@ return [
                 'linkedin'   => 'anomaly.extension.social_share_block::configuration.networks.option.linkedin',
                 'pinterest'  => 'anomaly.extension.social_share_block::configuration.networks.option.pinterest',
                 'reddit'     => 'anomaly.extension.social_share_block::configuration.networks.option.reddit',
+                'tumblr'     => 'anomaly.extension.social_share_block::configuration.networks.option.tumblr',
+                'buffer'     => 'anomaly.extension.social_share_block::configuration.networks.option.buffer',
                 'mail'       => 'anomaly.extension.social_share_block::configuration.networks.option.mail',
                 'print'      => 'anomaly.extension.social_share_block::configuration.networks.option.print',
             ],
