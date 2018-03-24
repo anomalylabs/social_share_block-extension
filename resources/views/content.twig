@@ -2,7 +2,7 @@
 {{ asset_add('styles.css', 'anomaly.extension.social_share_block::scss/block.scss') }}
 {#{{ asset_add('scripts.js', 'anomaly.extension.social_share_block::js/block.js') }}#}
 
-<div class="social-share">
+<div class="social-share social-share--{{ block.position.key ?: 'default' }}">
 
     {% for network in block.networks.keys %}
         <a class="social-share__btn social-share__btn--{{ network }}"
@@ -10,6 +10,7 @@
            rel="nofollow"
            target="_blank">
             <i class="{{ config('anomaly.extension.social_share_block::networks.' ~ network ~ '.icon', 'ion-social-' ~ network) }}"></i>
+            <span class="social-share__text">{{ trans('anomaly.extension.social_share_block::network.' ~ network ~ '.text') }}</span>
         </a>
     {% endfor %}
 
