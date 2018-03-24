@@ -23,4 +23,8 @@ return [
         'icon' => 'ion-paper-airplane',
         'url' => 'mailto:?subject={{ template.meta_title }}&amp;amp;body={{ url_full() }}',
     ],
+    'print'      => [
+        'icon' => 'ion-printer',
+        'url' => 'javascript:window.print();',
+    ],
 ];

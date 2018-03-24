@@ -11,6 +11,7 @@ return [
             'pinterest'  => 'Pinterest',
             'reddit'     => 'Reddit',
             'mail'       => 'Mail',
+            'print'      => 'Print',
         ],
     ],
 ];

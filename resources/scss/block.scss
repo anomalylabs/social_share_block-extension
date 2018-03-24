@@ -3,12 +3,13 @@
     display: inline-block;
 
     .social-share__btn {
-        color: #fff;
+        color: #ffffff;
         float: left;
-        font-size: 14px;
-        padding: 8px 16px;
+        width: 46px;
+        padding: 8px 0;
         line-height: 18px;
         margin: 0 10px 0 0;
+        text-align: center;
         border-radius: 3px;
         vertical-align: middle;
 
@@ -16,10 +17,11 @@
         transition: background 0.2s ease-in-out;
 
         i {
-            margin-right: 5px;
-            display: inline-block;
             font-size: 18px;
-            vertical-align: middle;
+
+            &:before {
+                font-size: 18px;
+            }
         }
     }
 }
@@ -42,7 +44,7 @@ $networks: (
         "facebook": #3b5998,
         "googleplus": #d34836,
         "linkedin": #007bb6,
-        "reddit": #ed001c,
+        "reddit": #ff1900,
         "pinterest": #bd081c,
         "mail": #f1c40f,
 ) !default;
