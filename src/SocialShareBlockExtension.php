@@ -13,6 +13,13 @@ class SocialShareBlockExtension extends BlockExtension
 {
 
     /**
+     * The extension category.
+     *
+     * @var string
+     */
+    protected $category = 'social';
+
+    /**
      * This extension provides a social
      * sharing block for the blocks module.
      *
