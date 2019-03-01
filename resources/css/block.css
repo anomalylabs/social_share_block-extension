@@ -1,0 +1,133 @@
+.social-share {
+  overflow: hidden;
+  display: inline-block;
+}
+.social-share[class*=social-share--sticky-] {
+  z-index: 2000;
+  position: fixed;
+}
+.social-share[class*=social-share--sticky-] .social-share__btn {
+  margin: 0;
+  float: left;
+}
+.social-share[class*=social-share--sticky-].social-share--sticky-left, .social-share[class*=social-share--sticky-].social-share--sticky-right {
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+.social-share[class*=social-share--sticky-].social-share--sticky-left .social-share__btn, .social-share[class*=social-share--sticky-].social-share--sticky-right .social-share__btn {
+  clear: both;
+  display: block;
+}
+.social-share[class*=social-share--sticky-].social-share--sticky-bottom {
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+.social-share.social-share--sticky-left {
+  left: 0;
+}
+.social-share.social-share--sticky-right {
+  right: 0;
+}
+.social-share.social-share--sticky-right {
+  right: 0;
+}
+
+.social-share__btn {
+  float: left;
+  color: #ffffff;
+  line-height: 21px;
+  padding: 12px 16px;
+  margin: 0 10px 0 0;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  background-color: #95a5a6;
+  transition: background 0.2s ease-in-out;
+}
+.social-share__btn:hover, .social-share__btn:focus, .social-share__btn:active {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #798d8f;
+}
+.social-share__btn i {
+  font-size: 18px;
+}
+
+.social-share__text {
+  margin-left: 0.5rem;
+}
+
+/**
+ * Network Colors
+ */
+.social-share__btn--twitter {
+  background-color: #00aced;
+}
+.social-share__btn--twitter:hover, .social-share__btn--twitter:focus, .social-share__btn--twitter:active {
+  background-color: #0087ba;
+}
+
+.social-share__btn--facebook {
+  background-color: #3b5998;
+}
+.social-share__btn--facebook:hover, .social-share__btn--facebook:focus, .social-share__btn--facebook:active {
+  background-color: #2d4373;
+}
+
+.social-share__btn--googleplus {
+  background-color: #d34836;
+}
+.social-share__btn--googleplus:hover, .social-share__btn--googleplus:focus, .social-share__btn--googleplus:active {
+  background-color: #b03626;
+}
+
+.social-share__btn--linkedin {
+  background-color: #007bb6;
+}
+.social-share__btn--linkedin:hover, .social-share__btn--linkedin:focus, .social-share__btn--linkedin:active {
+  background-color: #005983;
+}
+
+.social-share__btn--reddit {
+  background-color: #ff1900;
+}
+.social-share__btn--reddit:hover, .social-share__btn--reddit:focus, .social-share__btn--reddit:active {
+  background-color: #cc1400;
+}
+
+.social-share__btn--tumblr {
+  background-color: #365574;
+}
+.social-share__btn--tumblr:hover, .social-share__btn--tumblr:focus, .social-share__btn--tumblr:active {
+  background-color: #263c51;
+}
+
+.social-share__btn--buffer {
+  background-color: #313b43;
+}
+.social-share__btn--buffer:hover, .social-share__btn--buffer:focus, .social-share__btn--buffer:active {
+  background-color: #1b2126;
+}
+
+.social-share__btn--pinterest {
+  background-color: #bd081c;
+}
+.social-share__btn--pinterest:hover, .social-share__btn--pinterest:focus, .social-share__btn--pinterest:active {
+  background-color: #8c0615;
+}
+
+.social-share__btn--mail {
+  background-color: #f1c40f;
+}
+.social-share__btn--mail:hover, .social-share__btn--mail:focus, .social-share__btn--mail:active {
+  background-color: #c29d0b;
+}
